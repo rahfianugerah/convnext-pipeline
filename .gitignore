@@ -1,0 +1,24 @@
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore OS generated files
+.DS_Store
+
+# Ignore data files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.csv
