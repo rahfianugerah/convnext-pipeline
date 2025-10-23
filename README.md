@@ -3,7 +3,7 @@
 
 ### Overview
 <p align="justify">
-This repository implements a **multi-task AutoML pipeline** using **Optuna** for hyperparameter optimization, powered by ConvNeXt backbones. It supports three modes:
+This repository implements a <b>multi-task AutoML pipeline</b> using <b>Optuna</b> for hyperparameter optimization, powered by ConvNeXt backbones. It supports three modes:
 </p>
 
 1. **Classification** – ConvNeXt fine-tuning with standard metrics like Accuracy, Precision, Recall, F1-Score and Specificity (If binary classification, 2 labels only)
