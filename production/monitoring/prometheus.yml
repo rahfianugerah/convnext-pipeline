@@ -1,0 +1,12 @@
+# Prometheus Configuration
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'convnext-api'
+    static_configs:
+      - targets: ['api:8000']
+        labels:
+          service: 'convnext-api'
+          environment: 'production'

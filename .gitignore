@@ -22,3 +22,28 @@ env/
 *.rar
 *.7z
 *.csv
+
+# Production artifacts
+artifacts/
+logs/
+model_registry/
+ab_test_results/
+retraining_logs/
+retrained_models/
+exported_models/
+visualizations/
+*.pth
+*.onnx
+*.pt
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Environment files
+.env
+*.log
+
+# Jupyter notebooks
+*.ipynb_checkpoints
