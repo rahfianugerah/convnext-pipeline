@@ -3,17 +3,16 @@
 
 ### Overview
 <p align="justify">
-This repository implements a <b>multi-task AutoML pipeline</b> using <b>Optuna</b> for hyperparameter optimization, powered by ConvNeXt backbones. It supports three modes:
+This repository implements a <b>multi-task pipeline</b> using <b>Optuna</b> for hyperparameter optimization, powered by ConvNeXt backbones. It supports three modes:
 </p>
 
-1. **Classification** – ConvNeXt fine-tuning with standard metrics like Accuracy, Precision, Recall, F1-Score and Specificity (If binary classification, 2 labels only)
-2. **Object Detection** – Faster-RCNN with ConvNeXt backbone, evaluated via mAP@0.5:0.95 and mean IoU  
-3. **OCR (Optical Character Recognition)** – ConvNeXt + BiLSTM + CTC head for sequence text recognition, evaluated via CER/WER  
+1. **Classification** – `ConvNeXt` fine-tuning with standard metrics like Accuracy, Precision, Recall, F1-Score and Specificity (If binary classification, 2 labels only)
+2. **Object Detection** – `Faster-RCNN` with `ConvNeXt` backbone, evaluated via `mAP@0.5:0.95` and mean `IoU`  
+3. **OCR (Optical Character Recognition)** – `ConvNeXt + BiLSTM + CTC` head for sequence text recognition, evaluated via `CER/WER` 
 
 Each task runs a **complete train/val/test pipeline** with **Optuna-based hyperparameter search**, automatic checkpointing, and test-set evaluation.
 
 ### Environment Setup
-
 Using Conda (recommended)
 ```bash
 conda create -n convnext python=3.10 -y
@@ -61,11 +60,11 @@ python rec_to_labels_txt.py
 ```
 
 ### Run Model Training
-General Syntax
+**General Syntax**
 ```bash
 python main.py --data_root <DATA_PATH> --theme <classification|object|ocr> [options]
 ```
-Classification Example
+**Classification Example**
 ```bash
 python main.py \
   --theme classification \
@@ -74,7 +73,7 @@ python main.py \
   --n_trials 5 \
   --out_dir ./artifacts/cls_run
 ```
-Object Detection Example
+**Object Detection Example**
 ```bash
 python main.py \
   --theme object \
@@ -84,7 +83,7 @@ python main.py \
   --det_size 640 \
   --out_dir ./artifacts/det_run
 ```
-OCR Example
+**OCR Example**
 ```bash
 python main.py \
   --theme ocr \
@@ -207,6 +206,8 @@ artifacts/<theme>/
  └── logs / prints
 ```
 
+### License
 
+### Contributor
 
-
+### Author
