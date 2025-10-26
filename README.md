@@ -206,6 +206,11 @@ artifacts/<theme>/
  └── logs / prints
 ```
 
+### Auto Image EDA
+```python
+python image_eda_report.py --dataset "data/cls" --out "artifacts/eda_cls" --split separate/merged (choose 1)
+```
+
 ### License
 
 ### Contributor
