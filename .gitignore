@@ -22,3 +22,7 @@ env/
 *.rar
 *.7z
 *.csv
+# Ignore model checkpoint files
+*.pth
+best_*.pth
+snapshot_*.pth
