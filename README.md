@@ -7,7 +7,7 @@ This repository implements a <b>multi-task pipeline</b> using <b>Optuna</b> for 
 </p>
 
 1. **Classification** – `ConvNeXt` fine-tuning with standard metrics like Accuracy, Precision, Recall, F1-Score and Specificity (If binary classification, 2 labels only)
-2. **Object Detection** – `Faster-RCNN` with `ConvNeXt` backbone, evaluated via `mAP@0.5:0.95` and mean `IoU`  
+2. **Object Detection** – `Faster-RCNN` with `ConvNeXt` backbone, evaluated via `mAP@0.5:0.95` and mean `IoU` **(NOT TESTED YET)**
 3. **OCR (Optical Character Recognition)** – `ConvNeXt + BiLSTM + CTC` head for sequence text recognition, evaluated via `CER/WER` 
 
 Each task runs a **complete train/val/test pipeline** with **Optuna-based hyperparameter search**, automatic checkpointing, and test-set evaluation.
@@ -211,8 +211,21 @@ artifacts/<theme>/
 python image_eda_report.py --dataset "data/cls" --out "artifacts/eda_cls" --split separate/merged (choose 1)
 ```
 
-### License
-
 ### Contributor
+<p align="justify">
+ Thank you for contributing in this project, maybe next future work can be improved with another method, ready-use pipeline for production and more robust algorithm. 
+ Below is the contributor of this project, big thanks, love and full support from <code>The Engineers</code>:
+</p>
 
-### Author
+<div align="center">
+ 
+| Contributor | GitHub |
+| --- | --- |
+| Naufal Rahfi Anugerah | [@rahfianugerah](https://www.github.com/rahfianugerah) |
+| Achmad Ardani Prasha | [@achmadardhanip](https://www.github.com/achmadardanip) |
+| Clavino Ourizqi Rachmadi | [@clavinorach](https://www.github.com/clavinorach) |
+
+</div>
+
+### Project Author
+GitHub: [@rahfianugerah](https://www.github.com/rahfianugerah)
