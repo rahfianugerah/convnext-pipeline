@@ -1,5 +1,5 @@
-## ConvNeXt + Optuna Multi Task Pipeline
-**Unified Training Framework for Image Classification, Object Detection, and OCR Recognition**
+## Unified ConvNeXt Pipeline
+**Combined Pipeline Training Framework for Image Classification, Object Detection, and OCR Recognition**
 
 ### Overview
 <p align="justify">
@@ -8,7 +8,7 @@ This repository implements a <b>multi-task pipeline</b> using <b>Optuna</b> for 
 
 1. **Classification** – `ConvNeXt` fine-tuning with standard metrics like Accuracy, Precision, Recall, F1-Score and Specificity (If binary classification, 2 labels only)
 2. **Object Detection** – `Faster-RCNN` with `ConvNeXt` backbone, evaluated via `mAP@0.5:0.95` and mean `IoU` **(NOT TESTED YET)**
-3. **OCR (Optical Character Recognition)** – `ConvNeXt + BiLSTM + CTC` head for sequence text recognition, evaluated via `CER/WER` 
+3. **OCR (Optical Character Recognition)** – `ConvNeXt + BiLSTM + CTC` head for sequence text recognition, evaluated via `CER/WER`
 
 Each task runs a **complete train/val/test pipeline** with **Optuna-based hyperparameter search**, automatic checkpointing, and test-set evaluation.
 
